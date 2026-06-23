@@ -34,7 +34,13 @@
     <loc>https://SteUhl.github.io/test2/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://SteUhl.github.io/test2/aio.html</loc>
+  </url>
+  <url>
     <loc>https://SteUhl.github.io/test2/citation.html</loc>
+  </url>
+  <url>
+    <loc>https://SteUhl.github.io/test2/images.html</loc>
   </url>
   <url>
     <loc>https://SteUhl.github.io/test2/index.html</loc>
@@ -73,16 +79,34 @@
     <loc>https://SteUhl.github.io/test2/instructor/LICENSE.html</loc>
   </url>
   <url>
+    <loc>https://SteUhl.github.io/test2/instructor/aio.html</loc>
+  </url>
+  <url>
     <loc>https://SteUhl.github.io/test2/instructor/citation.html</loc>
   </url>
   <url>
+    <loc>https://SteUhl.github.io/test2/instructor/images.html</loc>
+  </url>
+  <url>
     <loc>https://SteUhl.github.io/test2/instructor/index.html</loc>
+  </url>
+  <url>
+    <loc>https://SteUhl.github.io/test2/instructor/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://SteUhl.github.io/test2/instructor/key-points.html</loc>
   </url>
   <url>
     <loc>https://SteUhl.github.io/test2/instructor/profiles.html</loc>
   </url>
   <url>
     <loc>https://SteUhl.github.io/test2/instructor/reference.html</loc>
+  </url>
+  <url>
+    <loc>https://SteUhl.github.io/test2/instructor-notes.html</loc>
+  </url>
+  <url>
+    <loc>https://SteUhl.github.io/test2/key-points.html</loc>
   </url>
   <url>
     <loc>https://SteUhl.github.io/test2/profiles.html</loc>
