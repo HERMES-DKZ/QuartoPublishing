@@ -25,7 +25,7 @@ exercises: 1
 In order to work in a clean and organized environment, we will first create a new working folder and choose to use it in Visual Studio Code. 
 In order to do so, we will first open the options in the upper left corner of the window (depicted as three parallel horizontal lines). There we will follow the path of File -> Open Folder.
 
-![](images/gettingstarted_01.png)
+![](/images/gettingstarted_01.png)
 
 Here we can then create a new folder, which we call ***"Art_distribution_paper"***.
 Once selected, it will open the folder in VSCode and select it as our new working environment. All new documents, outputs and relevant data will be stored in this folder.
