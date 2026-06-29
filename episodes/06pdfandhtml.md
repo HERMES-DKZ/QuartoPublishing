@@ -106,8 +106,8 @@ To implement such a theme you simply need to add it to your YAML header like thi
 ```
 The following example uses the two styles shown above:
 
-![](images/pdfhtml_02.png)
-![](images/pdfhtml_01.png)
+![](fig/pdfhtml_02.png)
+![](fig/pdfhtml_01.png)
 
 
 ::: challenge

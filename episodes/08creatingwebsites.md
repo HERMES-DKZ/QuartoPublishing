@@ -64,7 +64,7 @@ In our case we will give this page the title "mainpage" and start to fill it wit
 The filling of our document follows the same rules and steps that you have learned previously. You can simply add a header by using # and hen add some text.
 When we do this with our main page it could look like this:
 
-![](images/website_01.png)
+![](fig/website_01.png)
 
 #### Adding pictures
 
@@ -75,12 +75,12 @@ This can be simple done by copying the chosen file into our folder. But while th
 Because we want to try to keep our folder structure neat and easy to navigate we will put our images into a new folder calles "images" which we will put into our "moma_website" fodler.
 Now we add our picture into this newly created folder:
 
-![](images/website_02.png)
+![](fig/website_02.png)
 
 When we now want to insert this image into our main page we simple have to enter the following code into our Quarto document:
 
 ```
-![](images/moma_image.png)
+![](fig/moma_image.png)
 ```
 As you can see we have inserted the relevant folder, in this case "images", and the name of the chosen picture, in this case "moma_image.png", into the brackets.
 
@@ -111,7 +111,7 @@ You see the file ending is now .yml insted of .qmd.
 
 It will look like this in VSCode:
 
-![](images/website_03.png)
+![](fig/website_03.png)
 
 #### Filling the .yml file
 
@@ -206,11 +206,11 @@ When all of these elements are added, we can save our .yml file and render our f
 
 Now that we have added everything our "moma_website" folder should look something like this:
 
-![](images/website_04.png)
+![](fig/website_04.png)
 
 And our rendered result could look like this:
 
-![](images/website_05.png)
+![](fig/website_05.png)
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 

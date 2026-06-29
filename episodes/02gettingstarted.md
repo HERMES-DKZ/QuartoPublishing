@@ -43,7 +43,7 @@ As we are currently working on the very basics, we will choose the "Quarto Docum
 
 After opening the new file, you should see the following:
 
-![](images/gettingstarted_02.png)
+![](fig/gettingstarted_02.png)
 
 The "empty" Documents only contain a small YAML header with generic information about title and format of the document.
 
@@ -63,14 +63,14 @@ We will be working with both the source and the visual layout of Quarto. You wil
 You can easily switch between the two editing modes by right clicking on your screen and selecting "Edit in Visual/Source Mode". This will instantly switch you over. 
 In this lesson we will continue to work with Source Mode.
 
-![](images/gettingstarted_03.png)
+![](fig/gettingstarted_03.png)
 
 :::
 
 ## Rendering Your document
 
 To render your document and see its final look, you need to click the "Preview" Button on the top right side of the screen:
-![](images/gettingstarted_04.png)
+![](fig/gettingstarted_04.png)
 
 
 Alternatively you can use Ctrl+Shift+K.
@@ -78,11 +78,11 @@ Alternatively you can use Ctrl+Shift+K.
 This will have two effects:
 1. It will create a new file in your "Art_distribution_paper" folder, corresponding to your chosen format.
 
-   ![](images/gettingstarted_06.png)
+   ![](fig/gettingstarted_06.png)
 
 3. It will split your screen and show you your preview on the right side of VSCode.
 
-   ![](images/gettingstarted_05.png)
+   ![](fig/gettingstarted_05.png)
 
 ::: challenge
 ### Exercise:
