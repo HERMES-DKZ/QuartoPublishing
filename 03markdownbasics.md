@@ -30,7 +30,7 @@ These features contain some of the most common elements of written texts, such a
 The implementation of picrtures is also possible to implement pictures in Markdown.
 Some of the most useful parts of Markdown syntax are shown here:
 
-![A table with an overview of basic Markdown syntax](images/markdown_01.png)
+![A table with an overview of basic Markdown syntax](fig/markdown_01.png)
 
 ## Writing our paper with Markdown
 
@@ -116,7 +116,7 @@ Now we can add a table to our document. For this we "draw" a table in Markdown l
 The different sections of the table are devided by |.
 
 When we have now added our Table and Image to ourtext it Could look something like this when rendered:
-![](images/markdown_02.png)
+![](fig/markdown_02.png)
 
 ::: challenge
 

@@ -75,7 +75,7 @@ When rendered the pie chart will not show the numbers used in the code. Instead 
     
 The resulting pie chart would look like this in your rendered paper: 
 
-![](images/code_01.png)
+![](fig/code_01.png)
 
 
 
@@ -145,7 +145,7 @@ The forth step {rank = same} is optional and dictates that the three categories 
 ::: solution
 ### Here is an example of this Graphviz in your document: 
 
-![](images/code_02.png)
+![](fig/code_02.png)
 
 :::
 
@@ -233,7 +233,7 @@ Using the Plotly library, the python code is now loaded into our quarto document
 
 Using this code chuck in VSCode could look like the following example:
 
-![](images/code_03.png)
+![](fig/code_03.png)
 
 
 ::: caution
