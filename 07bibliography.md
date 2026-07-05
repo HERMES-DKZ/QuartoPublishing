@@ -4,7 +4,7 @@ teaching: 0
 exercises: 1
 ---
 
-::: questions 
+::: questions
 
 - What is the bibliography feature in Quarto?
 - How do you use and expand the bibliography and citations?
@@ -16,13 +16,14 @@ exercises: 1
 
 - Learn the basics of citations and footnotes in Quarto.
 - Learn to insert footnotes.
-- Learn to create citations in a document. 
-- Learn to find publications in the integrated databases and insert them manually into your references file
+- Learn to create citations in a document.
+- Learn to find publications in the integrated databases and insert them manually into your references file.
 - Learn how to expand your bibliography.
 
 :::
 
-One of the most important aspects of scientific publishing is the inclusion and organisation of sources,. citations and footnotes. These are all included in Quarto, which offers an integrated menu to organize and implement Citation from a variety of different sources.
+
+One of the most important aspects of scientific publishing is the inclusion and organisation of sources, citations and footnotes. These are all included in Quarto, which offers an integrated menu to organize and implement citation from a variety of different sources.
 
 ::: callout
 
@@ -30,15 +31,16 @@ For this part of the lesson, we will switch from Source Mode to Visual Mode, in 
 
 :::
 
+
 ## Footnotes:
 
-Footnotes offer an easy way to add useful information or literature to your text. 
-They can be implemented into your Quarto document by using the Insert -> Footnotes option in the Visual Mode of Quarto.
+Footnotes offer an easy way to add useful information or literature to your text.
+They can be implemented into your Quarto document by using the **Insert → Footnotes** option in the Visual Mode of Quarto.
 
 ![](fig/bibliograpy_footnotes01.png)
 
 Let us now add a quick footnote to our paper on the MoMA.
-In order to do so we just have to add the text for our footnote into the new textbox on tghe lower part of the VSCode window:
+In order to do so, we just have to add the text for our footnote into the new textbox on the lower part of the VSCode window:
 
 ![](fig/bibliograpy_footnotes02.png)
 
@@ -54,52 +56,53 @@ Doing so will accomplish two things: It will open a new window called "Insert ci
 
 
 This new file will contain your newly created bibliography, which can now be filled in a variety of ways.
-The easiest to do are the four already integrated options of either searching for a publication through their DOI (a unique number given to all published articles and books) or by searching through the databases of Crossref, Datacite or Pubmed.
-Simply add relevant information such as the DOI, title or name of the author into the search bar and see what you can find there. In the best case your needed citation is already part of one of these databases.
+The easiest to do are the four already integrated options of either searching for a publication through their DOI (a unique number given to all published articles and books) or by searching through the databases of Crossref, Datacite, or Pubmed.
+Simply add relevant information such as the DOI, title, or name of the author into the search bar and see what you can find there. In the best case, your needed citation is already part of one of these databases.  
 
-In our paper we want to reference Alan Wallachs scentific review of the book "Museums and American Intellectual Life, 1876–1926 " by Steven Conn.
-In order to do so we can simply search for Alan Wallachs name using the Crossref database.
+In our paper, we want to reference Alan Wallach’s scientific review of the book "Museums and American Intellectual Life, 1876–1926" by Steven Conn.
+In order to do so, we can simply search for Alan Wallach’s name using the Crossref database.
 
 ![](fig/bibliograpy_citations03.png)
 
-By pressing the + button on the right, we can quickly add it to our bibliography.
+By pressing the + button on the right, we can quickly add it to our bibliography.  
 
-We also want to add a reference to the the article "Selling the American Dream: MoMA, Industrial Design and Post-War France" by Gay McDonald. Sadly the article is found in none of the integrated databases.
-As we are not able to find the article using the integrated databanks, we have to add it manually. 
+We also want to add a reference to the article "Selling the American Dream: MoMA, Industrial Design and Post-War France" by Gay McDonald. Sadly, the article is found in none of the integrated databases.  
+
+As we are not able to find the article using the integrated databases, we have to add it manually.
 In order to do this, you need to open your newly created references.bib file with a text editor of your choice. This can also be done in Visual Studio Code.
 
 ![](fig/bibliograpy_citations04.png)
 
-In this file you will find all your already added references in form of code chunks.
-The citation function uses a format called Bibtex, which is used by a variety of databases. 
-
-It is, in part, made up of a reference name, signified by a @, which is used internally as a unique signifier of this specific reference.
+In this file you will find all your already added references in the form of code chunks.
+The citation function uses a format called BibTeX, which is used by a variety of databases.
+It is, in part, made up of a reference name, signified by an @, which is used internally as a unique signifier of this specific reference.
 
 Following this are the reference name, which will be shown in your Quarto document when using the citation function, and a variety of information inside {} brackets. These contain the relevant metadata of the publication.
-As you can see, the information is stored in form of Key-Value pairs, similar to the YAML headers we have already encountered. they contain information such author, publication date, DOI or relevant URLs. 
-You can freely add or subtract information should you find yourself missing some information. But as academic best practice, the authots name, publication date and publisher should always be names as part of a citation or literary reference.
 
-You can now simply add further objects to your list of references by either manually typing in additional sources, or by copy and pasting the relevant BibTex chunks from other websites. Many Websites used to publish academic texts, such as Jstor, or libraries, offer the download of txt files containing the relevant BibTex Chunks as part of their own citation functions.
-Here is an example using Jstor:
+As you can see, the information is stored in the form of key‑value pairs, similar to the YAML headers we have already encountered. They contain information such as author, publication date, DOI, or relevant URLs.
+
+You can freely add or subtract information should you find yourself missing some information. However, as academic best practice, the author's name, publication date, and publisher should always be named as part of a citation or literary reference.
+You can now simply add further objects to your list of references by either manually typing in additional sources, or by copying and pasting the relevant BibTeX chunks from other websites. Many websites used to publish academic texts, such as JSTOR or libraries, offer the download of txt files containing the relevant BibTeX chunks as part of their own citation functions.
+
+Here is an example using JSTOR:
 
 ![](fig/bibliograpy_citations05.png)
 
-And here is how it looks when added to your reference.bib file:
+And here is how it looks when added to your **reference.bib** file:
 
 ![](fig/bibliograpy_citations06.png)
 
-
-Once you have added the new code chunk to you refernces.bb file, you can save (Ctrl+S) and return to your "Insert Citation" window.
-Here you will now find your newly added reference as part of you bibliography:
+Once you have added the new code chunk to your references.bib file, you can save (Ctrl+S) and return to your "Insert Citation" window.
+Here you will now find your newly added reference as part of your bibliography:
 
 ![](fig/bibliograpy_citations07.png)
 
 
-Now you can simply click on the different references in order to insert them into your work. 
-In our case we want to add McDonalds article as a reference into our text.
+Now you can simply click on the different references in order to insert them into your work.
+In our case we want to add McDonald’s article as a reference in our text.
 This will create a reference in the following format: [[@63aecae8-5ed6-394e-883b-12026c168381]] in source mode.
-The rendered Document will have the Authors name and the publication date in brackets in its place.
-Using the reference feature will also create a reference index at the bottom of your rendered document. This index will contain a full bibliographical list of all used refences, using the information contained in the reference.bib file.
+The rendered document will have the author's name and the publication date in brackets in its place.
+Using the reference feature will also create a reference index at the bottom of your rendered document. This index will contain a full bibliographical list of all used references, using the information contained in the reference.bib file.
 The result could look something like this:
 
 ![](fig/bibliograpy_citations08.png)
@@ -107,17 +110,18 @@ The result could look something like this:
 ::: challenge
 
 ### Exercise
-Use the **References** and **Footnote** features to enrich your document with citations. 
-Try to find publications that you already know from previous projects, yourself or collegues. If they are not part of the integrated databases, try to add them manually to your reference.bib file!
-Create and fill out your bibliography, then render your document one last time.
+Use the **References** and **Footnote** features to enrich your document with citations.  
+Try to find publications that you already know from previous projects, yourself, or **colleagues**. If they are not part of the integrated databases, try to add them manually to your `reference.bib` file!  
+Create and fill out your bibliography, then render your document one last time.  
+:::  
 
-:::
+::::::::::::::::::::::::::::::::::::: keypoints 
 
-::::::::::::::::::::::::::::::::::::: keypoints
-
-+ Quarto has an integrated Bibliography feature
-+ The bibliography can be accessed via the visual mode
-+ You can add literature via four integrated databases, or by manually typing them into the reference.bib file
++ Quarto has an integrated Bibliography feature  
++ The bibliography can be accessed via the visual mode  
++ You can add literature via four integrated databases, or by manually typing them into the `reference.bib` file  
 + Literature added via the bibliography feature can be added into the text via footnotes and citations
 
 ::::::::::::::::::::::::::::::::::::::::::::::
+
+
