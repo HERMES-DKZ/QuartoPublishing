@@ -495,7 +495,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-02gettingstarted"><p>Content from <a href="02gettingstarted.html">Getting started</a></p>
 <hr>
-<p>Last updated on 2026-06-29 |
+<p>Last updated on 2026-07-05 |
 
         <a href="https://github.com/SteUhl/test2/edit/main/episodes/02gettingstarted.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -509,9 +509,9 @@ any links that you are not going to use.
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul>
-<li>How do i open a new Quarto document?</li>
+<li>How do I open a new Quarto document?</li>
 <li>What editing modes exist?</li>
-<li>How do i switch between modes?</li>
+<li>How do I switch between modes?</li>
 </ul>
 </div>
 </div>
@@ -522,8 +522,8 @@ any links that you are not going to use.
 <h3 class="card-title">Objectives</h3>
 <ul>
 <li>Open a new Quarto document.</li>
-<li>Create a working folder</li>
-<li>Switch between editing modes</li>
+<li>Create a working folder.</li>
+<li>Switch between editing modes.</li>
 </ul>
 </div>
 </div>
@@ -533,49 +533,61 @@ any links that you are not going to use.
 <section><h2 class="section-heading" id="choosing-your-working-folder">Choosing your working folder<a class="anchor" aria-label="anchor" href="#choosing-your-working-folder"></a>
 </h2>
 <hr class="half-width">
-<p>In order to work in a clean and organized environment, we will first
-create a new working folder and choose to use it in Visual Studio Code.
-In order to do so, we will first open the options in the upper left
-corner of the window (depicted as three parallel horizontal lines).
-There we will follow the path of File -&gt; Open Folder.</p>
+<p>To work in a clean and organized environment, we will first create a
+new working folder and set it as our project directory in Visual Studio
+Code.</p>
+<p>To do so, open the menu in the upper-left corner of the window
+(depicted as three parallel horizontal lines). From there, follow the
+path: <strong>File → Open Folder</strong>.</p>
 <figure><img src="fig/gettingstarted_01.png" class="figure mx-auto d-block"></figure><p>Here we can then create a new folder, which we call
-<strong><em>“Art_distribution_paper”</em></strong>. Once selected, it
-will open the folder in VSCode and select it as our new working
-environment. All new documents, outputs and relevant data will be stored
-in this folder.</p>
+<strong><em>“Art_distribution_paper”</em></strong>. Once selected, VS
+Code will open the folder and set it as our new working environment. All
+new documents, outputs, and relevant data will be stored in this
+folder.</p>
 </section><section><h2 class="section-heading" id="opening-a-quarto-document">Opening a Quarto Document<a class="anchor" aria-label="anchor" href="#opening-a-quarto-document"></a>
 </h2>
 <hr class="half-width">
-<p>Now we continue by creating our Quarto file. This is done by again
-selecting the options in upper left corner and following the path File
--&gt; New File. After installing the extension, two new options appear
-when creating a new file in VS Code: Quarto Document and Quarto Project.
-A Quarto Document creates a single file, that can be used to create
-singular Documents such as a PDF. A Quarto Project offers you the option
-to choose between several premade setups used to create more complex
-structures such as a blog, book or website.</p>
-<p>As we are currently working on the very basics, we will choose the
-“Quarto Document” option when creating a new file.</p>
+<p>Next, we’ll create our Quarto file. Again, open the menu in the
+upper-left corner and follow the path: <strong>File → New
+File</strong>.</p>
+<p>After installing the Quarto extension, two new options appear when
+creating a new file in VS Code:</p>
+<ul>
+<li>
+<strong>Quarto Document</strong> — creates a single file suitable
+for standalone documents such as PDFs or HTML reports.<br>
+</li>
+<li>
+<strong>Quarto Project</strong> — offers preconfigured templates for
+more complex structures like blogs, books, or websites.</li>
+</ul>
+<p>Since we’re focusing on the basics, we’ll select “Quarto Document”
+when creating a new file.</p>
 <p>After opening the new file, you should see the following:</p>
-<figure><img src="fig/gettingstarted_02.png" class="figure mx-auto d-block"></figure><p>The “empty” Documents only contain a small YAML header with generic
-information about title and format of the document.</p>
+<figure><img src="fig/gettingstarted_02.png" class="figure mx-auto d-block"></figure><p>The “empty” document contains only a minimal YAML header with generic
+information about the document’s title and format.</p>
 <p>By using the keybord shortcut <em>Ctrl + S</em>, we can now save our
 new Quarto document in our previously created “Art_distribution_paper”
 folder. We will call it <em>“Moma_paper”</em></p>
 </section><section><h2 class="section-heading" id="visual-and-source-mode">Visual and Source Mode<a class="anchor" aria-label="anchor" href="#visual-and-source-mode"></a>
 </h2>
 <hr class="half-width">
-<p>When working in a Quarto environment the user can decide if they wish
-to work in a visual or source code-based layout. The visual layout
-offers an easy to navigate environment similar to the layout of programs
-like MSWord. The Markdown specific code chunks are hidden as to not
-confuse the user. The source layout lacks the visual interface but
-includes the underlying markdown code of the document.</p>
-<p>Neither of the two environments are inherently better then the other.
-We will be working with both the source and the visual layout of Quarto.
-You will be shown the correct ways of selecting the needed options in
-the visual interface and how to write the needed code in the source code
-of the document.</p>
+<p>When working in Quarto, you can choose between two editing modes:</p>
+<ul>
+<li>
+<strong>Visual Mode</strong>: Offers a WYSIWYG (What You See Is What
+You Get) interface similar to Microsoft Word. Markdown syntax is hidden
+to reduce confusion for beginners.<br>
+</li>
+<li>
+<strong>Source Mode</strong>: Shows the underlying Markdown code,
+giving you full control over formatting and structure.</li>
+</ul>
+<p>Neither mode is inherently better — the choice depends on your
+preference and workflow.</p>
+<p>In this lesson, we’ll work with both modes. You’ll learn how to use
+the visual interface to make selections and how to write the
+corresponding Markdown code in Source Mode.</p>
 <div id="callout1" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -583,27 +595,32 @@ of the document.</p>
 <span class="callout-header">Callout</span>
 <div class="callout-inner">
 <div class="callout-content">
-<p>You can easily switch between the two editing modes by right clicking
-on your screen and selecting “Edit in Visual/Source Mode”. This will
-instantly switch you over. In this lesson we will continue to work with
-Source Mode.</p>
-<figure><img src="fig/gettingstarted_03.png" class="figure mx-auto d-block"></figure>
+<p>You can easily switch between the two editing modes by right-clicking
+anywhere in the document and selecting “<strong>Edit in Visual
+Mode</strong>” or “<strong>Edit in Source Mode</strong>”. This will
+instantly switch your view.</p>
+<p>In this lesson, we will continue working in Source Mode. <img src="fig/gettingstarted_03.png" class="figure"></p>
 </div>
 </div>
 </div>
 </section><section><h2 class="section-heading" id="rendering-your-document">Rendering Your document<a class="anchor" aria-label="anchor" href="#rendering-your-document"></a>
 </h2>
 <hr class="half-width">
-<p>To render your document and see its final look, you need to click the
-“Preview” Button on the top right side of the screen: <img src="fig/gettingstarted_04.png" class="figure"></p>
-<p>Alternatively you can use Ctrl+Shift+K.</p>
-<p>This will have two effects: 1. It will create a new file in your
-“Art_distribution_paper” folder, corresponding to your chosen
-format.</p>
-<figure><img src="fig/gettingstarted_06.png" class="figure mx-auto d-block"></figure><ol start="3" style="list-style-type: decimal">
+<p>To render your document and preview its final appearance, click the
+“<strong>Preview</strong>” button in the top-right corner of the screen:
+<img src="fig/gettingstarted_04.png" class="figure"></p>
+<p>Alternatively you can use <strong>Ctrl+Shift+K</strong>.</p>
+<p>This will trigger two actions:</p>
+<ol style="list-style-type: decimal">
 <li>
-<p>It will split your screen and show you your preview on the right
-side of VSCode.</p>
+<p>It generates a new output file in your
+“<strong>Art_distribution_paper</strong>” folder, matching your chosen
+format (e.g., PDF or HTML).</p>
+<figure><img src="fig/gettingstarted_06.png" class="figure mx-auto d-block"></figure>
+</li>
+<li>
+<p>It splits your screen and displays the rendered preview on the
+right side of VS Code.</p>
 <figure><img src="fig/gettingstarted_05.png" class="figure mx-auto d-block"></figure>
 </li>
 </ol>
@@ -629,12 +646,11 @@ folder.</p>
 <div class="callout-inner">
 <div class="callout-content">
 <ul>
-<li>You can create a new working folder in Visual Studio Code</li>
-<li>there are twio kinds of Quarto files: Quarto documents and Quarto
-projects</li>
-<li>You can seemlessly switch between a sourcemode and a visual
-mode</li>
-<li>You can render your document via the “Preview” button</li>
+<li>You can create a new working folder in Visual Studio Code.</li>
+<li>There are two kinds of Quarto files: Quarto Documents and Quarto
+Projects.</li>
+<li>You can seamlessly switch between Source Mode and Visual Mode.</li>
+<li>You can render your document using the “Preview” button.</li>
 </ul>
 </div>
 </div>
