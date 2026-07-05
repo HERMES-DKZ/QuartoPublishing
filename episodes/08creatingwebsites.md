@@ -4,11 +4,11 @@ teaching: 0
 exercises: 0
 ---
 
-::: questions 
+::: questions
 
 - How to create a website using Quarto?
-- What seps and components are necessary to create a website with Quarto?
-  
+- What steps and components are necessary to create a website with Quarto?
+
 :::
 
 ::: objectives
@@ -18,106 +18,108 @@ exercises: 0
 
 :::
 
-A more advanced function of Quarto is, that users can not only create simple and standalone html pages and documets, but can also create more complex and connected webpages.
+A more advanced function of Quarto is that users can not only create simple and standalone HTML pages and documents, but can also create more complex and connected webpages.  
 These webpages need a more complex structure of pages and files.
+
 
 ## Creating the necessary files
 
 In order to create our website, we first need to plan how we want our website to be structured.
-All files and must be situated in the same folder in order for our website to function!
-In this case we want to have three main pages: A homepage, as well as two further sections about the history and the collections. The history section should have to subpages for the founding and the current history.
+All files must be situated in the same folder in order for our website to function!
+In this case we want to have three main pages: A homepage, as well as two further sections about the history and the collections. The history section should have two subpages for the founding and the current history.
 
 ### Creating a new folder
 
 Let us start with the most basic step: the creation of a new working folder.
-Like in the previous lesson we first create a new folder called "moma_website" on our computer.
+Like in the previous lesson, we first create a new folder called "moma_website" on our computer.
 Then we open this folder in VSCode using the navigation bar on the left side.
-This dolder will now contain all pages, images and ressources needed to create our website. We will slowly add more and more documents as our website grows.
+This folder will now contain all pages, images, and resources needed to create our website. We will slowly add more and more documents as our website grows.
 
 ### Creating our pages
 
 #### Creating the mainpage
 
-First we will create our mainpage, which will serve as our starting point and the first page a viewer of our website will most likely see.
-in order to do so we create a new document in our folder by navigating to the left side of the VSCode window and selecting "New File" option under "File".
-We then choose to create a Quarto document. By saving it (Ctrl+S), we can name it. 
+First we will create our main page, which will serve as our starting point and the first page a viewer of our website will most likely see.
+In order to do so, we create a new document in our folder by navigating to the left side of the VSCode window and selecting the "New File" option under "File".
+We then choose to create a Quarto document. By saving it (Ctrl+S), we can name it.
 
 ::: caution
 
 ### Important!
-Where we previously had comple freedom when it came to naming our document, this one need to have the name **"index.qmd"** in order to function as our mainpage!
+Where we previously had complete freedom when it came to naming our document, this one needs to have the name "**index.qmd**" in order to function as our main page!
 
 :::
 
-Once we named our webpage, we need to start filling it.
+Once we named our webpage, we need to start filling it.  
+We start with a very simple YAML header. In contrast to our previous headers, this one only needs two Key-Value pairs: the title and the format.  
+While the format needs to be set as `html`, when deciding on the title you again have complete freedom.  
 
-We start with a very simple YAML header. In contrast to our previous headers, this one only need to Key-Value pairs: the title and the format.
-While the format needs to be set as html, when deciding on the title you again have complete freedom.
+::: tip  
 
-::: tip
+Always try to choose speaking and easy-to-understand titles and filenames, in order to avoid confusion or mishaps!  
 
-Always try to choose speaking and easy to understand titles and filenames, in order to avoid confusion or mishaps!
+:::  
 
-:::
-
-In our case we will give this page the title "mainpage" and start to fill it with text and other media.
-The filling of our document follows the same rules and steps that you have learned previously. You can simply add a header by using # and hen add some text.
-When we do this with our main page it could look like this:
+In our case we will give this page the title **"mainpage"** and start to fill it with text and other media.  
+The filling of our document follows the same rules and steps that you have learned previously. You can simply add a header by using `#` and then add some text.  
+When we do this with our main page, it could look like this:
 
 ![](fig/website_01.png)
 
 #### Adding pictures
 
 We now want to add a picture of the MoMA to our main page.
-In order to do so we can use the same syntax we used to add pictures to our previous documents.
-To make sure our pictures can always be accessed we will add them to our folder as a ressource.
-This can be simple done by copying the chosen file into our folder. But while this is the easiest solution, it also can get disorganized and chaotic fast, if you choose to add a lot of different images to your website.
-Because we want to try to keep our folder structure neat and easy to navigate we will put our images into a new folder calles "images" which we will put into our "moma_website" fodler.
+In order to do so, we can use the same syntax we used to add pictures to our previous documents.
+To make sure our pictures can always be accessed, we will add them to our folder as a resource.
+This can be simply done by copying the chosen file into our folder. But while this is the easiest solution, it also can get disorganized and chaotic fast, if you choose to add a lot of different images to your website.
+Because we want to try to keep our folder structure neat and easy to navigate, we will put our images into a new folder called "images", which we will put into our "moma_website" folder.
 Now we add our picture into this newly created folder:
 
 ![](fig/website_02.png)
 
-When we now want to insert this image into our main page we simple have to enter the following code into our Quarto document:
+When we now want to insert this image into our main page, we simply have to enter the following code into our Quarto document:  
 
 ```
 ![](fig/moma_image.png)
 ```
-As you can see we have inserted the relevant folder, in this case "images", and the name of the chosen picture, in this case "moma_image.png", into the brackets.
+As you can see, we have inserted the relevant folder, in this case "**images**", and the name of the chosen picture, in this case "**moma_image.png**", into the brackets.
 
 #### Creating the other pages
 
-Now we can save our mainpage and continue creating our three remaining pages.
-These follow the same steps as creating our main page, with one exception: We are again free to choose the name of our files.
-We now create three more pages: One page for the museums collections, and two pages for its history.
-We again create a file for each page, fill a simple YAML header with title and html format, and then fill our page with headers, text and images.
-When done we have thre more pages with the filenames collections.qmd, founding.qmd and modernhistory.qmd.
+Now we can save our main page and continue creating our three remaining pages.  
+These follow the same steps as creating our main page, with one exception: We are again free to choose the name of our files.  
+We now create three more pages: One page for the museum’s collections, and two pages for its history.  
+We again create a file for each page, fill a simple YAML header with title and html format, and then fill our page with headers, text, and images.  
+When done, we have three more pages with the filenames `collections.qmd`, `founding.qmd`, and `modernhistory.qmd`.
 
 ### The YAML File
 
 #### Creating the .yml file
-Up until now he have just created a couple of Quarto files in the html format. These will not interact with each other or act as anything other than singular documents.
-We have also used just the barest minimum of YAML headers in these files.
-In order to connect our different document and give our files the needed formatting and metadata we will now have to create the heart of a Quarto website: The **YAML-File**!
+Up until now, we have just created a couple of Quarto files in the HTML format. These will not interact with each other or act as anything other than singular documents.  
+We have also used just the barest minimum of YAML headers in these files.  
+In order to connect our different documents and give our files the needed formatting and metadata, we will now have to create the heart of a Quarto website: The **YAML file**! 
 
-To create this file we again navigate down the "File" -> "New File" path, as we did with our other documents. But instead of choosing to create a Quarto document, we will now enter something different into our text window.
+To create this file, we again navigate down the **"File" → "New File"** path, as we did with our other documents. But instead of choosing to create a Quarto document, we will now enter something different into our text window.
+
+´´
 
 ::: caution
 
 ### Important!
-Like with our mainpage, this file also needs a very specific name: "_quarto.yml."
-You see the file ending is now .yml insted of .qmd.
+Like with our main page, this file also needs a very specific name: **"_quarto.yml"**.  
+You see the file ending is now **.yml** instead of **.qmd**.  
 
-:::
+:::  
 
 It will look like this in VSCode:
+
 
 ![](fig/website_03.png)
 
 #### Filling the .yml file
+Now that we created our YAML file, we need to fill it with the specific Key-Value pairs needed to create a website.  
 
-Now that we created our YAML file, we need to fill it with the specific Key-Value pairs needed to create a website.
-
-In order to do so the file needs three sections: The "project" section, the "website" section and the "format" section.
+In order to do so, the file needs three sections: The **"project"** section, the **"website"** section, and the **"format"** section.
 
 ##### The project section
 
@@ -128,7 +130,7 @@ output-dir:  This will dictate where the rendered html files for our webpage wil
 ressources:  This will dictate which folders will contai ressources used for this website. You can create and enter multiple ressource folders for images, videos, audiofildes etc. in our cas e will will enter our previously created "images/" folder.
 ```
 
-When we have entered everything our project section ourld look like this:
+When we have entered everything, our project section would look like this:
 ``` {YAML}
   project:
     type: website
@@ -141,6 +143,7 @@ When we have entered everything our project section ourld look like this:
 
 The "website" section of the YAML file will contain the most information and create the connections between our different Quarto documents.
 It contains the following elements:
+
 ```
 title:   The name of our Website
 image:   Here you can put an image file that will act as a logo for the website. it will be the picture displayes next to the title and in the tab of the browser
@@ -152,14 +155,16 @@ navbar:  this will create the navigation bar at the top of the website. This wil
 page-footer:  This elemet is used to create a footer for your website. Like the navigation bar, it can also be divided into left, right and center. It can also contain a variety               of icons, text or images. Icon can be added by using the previously mentioned "icon + href" element, while text can be added via the "text" element.
 ```
 
-We now want to create the 2website section of our MoMA website. 
-As the title of the website we choose "A Short Guide to the MoMA"
-For our image we found a good looking logo of the museum. We put the logo under the name "moma_icon.png" inro our previously created "images" folder.
-We want the navigation bar to be sepetarted into two sections. On the left we want to have our different pages.  Our starting page will be calles "Home" in the navigation bar. Our page about the Collections can be found under "Collections". And our two subpages about the Founding and the modern history of the MoMA will be found under the name "History of the MoMA".
-On the right side we want to add an icon that leed to the GitHub page of the project. 
-As a footer we simply add a textblock in the center. It will contain the names of our authors as well as their universities.
+We now want to create the **website** section of our MoMA website.  
+As the title of the website, we choose **"A Short Guide to the MoMA"**.  
+For our image, we found a good-looking logo of the museum. We put the logo under the name **"moma_icon.png"** into our previously created **"images"** folder.  
+We want the navigation bar to be separated into two sections. On the left, we want to have our different pages: Our starting page will be called **"Home"** in the navigation bar. Our page about the Collections can be found under **"Collections"**. And our two subpages about the Founding and the modern history of the MoMA will be found under the name **"History of the MoMA"**.  
+On the right side, we want to add an icon that leads to the GitHub page of the project.  
+As a footer, we simply add a text block in the center. It will contain the names of our authors as well as their universities.  
+
 
 When we add all this information into our YAML file, it should look somewhat like this:
+
 
 ``` {YAML}
 website:
@@ -185,11 +190,12 @@ website:
 
 ##### The format section
 
-lastly we need to add the Key-value pairs that determine the appearence of our website. In this section we can use the same commands and Key-Value pairs previously discussed in Section 6 of the course.
-We choose to use twi themes in order to create the option for a light and dark mode. For the light theme we choose the theme "united", while for the dark theme we choose "darkly".
-We also want our website to contain tables of content in the different pages.
+Lastly, we need to add the Key-Value pairs that determine the appearance of our website. In this section, we can use the same commands and Key-Value pairs previously discussed in Section 6 of the course.  
+We choose to use two themes in order to create the option for a light and dark mode. For the light theme, we choose the theme **"united"**, while for the dark theme, we choose **"darkly"**.  
+We also want our website to contain tables of contents in the different pages.  
 
-Wenn added to the YAMl file our "format" section looks like this:
+When added to the YAML file, our **"format"** section looks like this:
+
 
 ``` {YAML}
 format: 
@@ -204,7 +210,7 @@ When all of these elements are added, we can save our .yml file and render our f
 
 ### The finished website:
 
-Now that we have added everything our "moma_website" folder should look something like this:
+Now that we have added everything, our "moma_website" folder should look something like this:
 
 ![](fig/website_04.png)
 
@@ -212,10 +218,11 @@ And our rendered result could look like this:
 
 ![](fig/website_05.png)
 
-::::::::::::::::::::::::::::::::::::: keypoints
+::::::::::::::::::::::::::::::::::::: keypoints  
 
-+ OQuarto can be used to create functioning websites
-+ You can use multiple HTML documents made in quarto to create different pages for your website
++ Quarto can be used to create functioning websites  
++ You can use multiple HTML documents made in Quarto to create different pages for your website  
 + The different HTML documents are connected by a singular overarching YAML file
-
+  
 ::::::::::::::::::::::::::::::::::::::::::::::
+
