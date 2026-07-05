@@ -22,28 +22,27 @@ exercises: 2
 
 :::
 
-Quarto can be used to both show and render code in a newly created document. One can basically program directly in quarto, using ones preferred coding language, and have the data rendered directly in the pdf or html document.
-In order to do so you need to simply insert your code into the document.
-In this lesson we will mostly implement python code, as well as several integrated coding languages.
+Quarto can be used to both show and render code in a newly created document. One can basically program directly in Quarto, using one’s preferred coding language, and have the data rendered directly in the PDF or HTML document.
+In order to do so, you need to simply insert your code into the document.
+In this lesson we will mostly implement Python code, as well as several integrated coding languages.
 
 ::: callout
 
 ### Note:
-By default, code inserted via Markdown will be shown as code blocks in the rendered document. If you want to use collapsable or hidden code blocks in your renders, simply add 'code-fold: true' to your YAML section.
-
-One can not only insert code into one’s documents, but also directly visualize it in order to create illustrations based on the inserted code. 
-This can be done in a variety of ways, such as using already integrated programming languages like mermaid, or by importing and using extensions like plotly in Python code cells.
+By default, code inserted via Markdown will be shown as code blocks in the rendered document. If you want to use collapsible or hidden code blocks in your renders, simply add 'code-fold: true' to your YAML section.
+One can not only insert code into one’s documents, but also directly visualize it in order to create illustrations based on the inserted code.
+This can be done in a variety of ways, such as using already integrated programming languages like Mermaid, or by importing and using extensions like Plotly in Python code cells.
 
 :::
 
 
 ## Using Mermaid:
 
-One of the coding languages already integrated in Quarto is Mermaid. 
+One of the coding languages already integrated in Quarto is Mermaid.
 Mermaid is a simple, text-based diagramming and visualization language that lets you create flowcharts, sequence diagrams, Gantt charts, class diagrams, and more using plain text.
 It uses a very simple text-based programming language.
 To make the work with Mermaid easy, you can use one of several web-based Mermaid editors. These allow you to create your graphs visually and copy the underlying code. You can then paste this code into your Quarto document.
-One of these Website is [Mermaid.live](https://mermaid.live/).
+One of these websites is [Mermaid.live](https://mermaid.live/).
 
 In order to use Mermaid in your Quarto document, simply create a mermaid code block and insert your code.
 An empty mermaid code block should look like this:
@@ -54,12 +53,12 @@ An empty mermaid code block should look like this:
 
 
 ### Using Mermaid to create a piechart :
-A commonly used graph, which can be used and implemented to visualize a wide variety of data, is the piechart. It offers an easy and comprehensive form of displaying percentages and relative strength of different aspects of data. 
-A bar chart can be easyly implemented into a Quarto document using the implemented Mermaid language. 
+A commonly used graph, which can be used and implemented to visualize a wide variety of data, is the pie chart. It offers an easy and comprehensive form of displaying percentages and relative strength of different aspects of data.
 
-For our scientific paper, we can create a pie chart, showing the relative distribution of the eight most used Media in the MOMA, that were created between 1930 and 1934. It is split into eight categories, representing each medium . Each categorie is represented by an indented Key-Value pair, with the titles of each categorie funntioning as the key. The value of each key contains the total number of the relevant media added. 
+A bar chart can be easily implemented into a Quarto document using the implemented Mermaid language.
+For our scientific paper, we can create a pie chart, showing the relative distribution of the eight most used media in the MOMA, that were created between 1930 and 1934. It is split into eight categories, representing each medium. Each category is represented by an indented Key‑Value pair, with the titles of each category functioning as the key. The value of each key contains the total number of the relevant media added.
 
-When rendered the pie chart will not show the numbers used in the code. Instead it will show the percentage of the categorie relevant to the total amount of media, made up pf all eight categories combined.
+When rendered, the pie chart will not show the numbers used in the code. Instead it will show the percentage of the category relevant to the total amount of media, made up of all eight categories combined.
     
     ```{mermaid}
     pie title Medium Distribution, Top 8 1930-34
@@ -83,16 +82,16 @@ The resulting pie chart would look like this in your rendered paper:
 ::: challenge
 ### Exercise 1: Mermaid
 
-Try to create your own pie chart. Try out different numbers of categories and change the associated values to experiment on how the resulting graph will change.
+Try to create your own pie chart. Try out different numbers of categories and change the associated values to experiment with how the resulting graph will change.
 :::
 
 ## Using Graphviz
 
-Similar to Mermaid, Graphviz is an integrated coding language, which uses simple text-based descriptions of charts in order to create visualisations.
+Similar to Mermaid, Graphviz is an integrated coding language which uses simple text‑based descriptions of charts in order to create visualisations.
 Where Mermaid is mostly used for common or simple charts and graphs, Graphviz can be used to create more complex forms of visualisations and workflows.
 Like with Mermaid, the simplest way to use Graphviz with Quarto is to use a [web based Graphwiz editor](https://edotor.net/) and copy the resulting code into your Quarto document.
-To do this we will use another code block, this time using "Dot", which is the internal name for the Graphviz coding language.
-A code block for Graphvioz wouzld look like this:
+To do this, we will use another code block, this time using "**Dot**", which is the internal name for the Graphviz coding language.
+A code block for Graphviz would look like this:
 
     ```{dot}
     
@@ -102,13 +101,13 @@ A code block for Graphvioz wouzld look like this:
 
 ::: callout
 ### Creating a flow chart in Graphviz:
-One of the possibilities Graphviz offers is the abilitie to quickly create flow charts in your Quarto document. 
-As an example we will create a simple and small flow chart showing the process of coding in Quarto:
+One of the possibilities Graphviz offers is the ability to quickly create flowcharts in your Quarto document.
+As an example we will create a simple and small flowchart showing the process of coding in Quarto:
 The code is split into 4 sections:
 The first section is made out of the name of the graph. It creates the "borders" of the remaining code, which is later placed inside the {} brackets.
-The second section established the different categories and steps in the flowchart. In our example each of these are made out of an internal name (here for example "code", "works", "try" and "retry"), a label, which establishes what will be written inside the shape, and the form of the shape itself (rectangle, oval, diamond etc.)
-The third step establishes the connections between the shapes created in step 2. Here Graphviz uses an easy to understand concept: Connections between different shapes/categories are depicted in the code as arrows. The arrow can be labled with text or flipped by adding the relevant code ( "label =" for text, "dir=back" for a flipped arrow) behind the newly created directional pair.
-The forth step {rank = same} is optional and dictates that the three categories "try", "works" and "retry" will be displayed next to each other as they are now on the same rank.
+The second section establishes the different categories and steps in the flowchart. In our example each of these are made out of an internal name (here for example "code", "works", "try" and "retry"), a label, which establishes what will be written inside the shape, and the form of the shape itself (rectangle, oval, diamond etc.).
+The third step establishes the connections between the shapes created in step 2. Here Graphviz uses an easy‑to‑understand concept: Connections between different shapes/categories are depicted in the code as arrows. The arrow can be labeled with text or flipped by adding the relevant code ("label =" for text, "dir=back" for a flipped arrow) behind the newly created directional pair.
+The fourth step {rank = same} is optional and dictates that the three categories "try", "works" and "retry" will be displayed next to each other as they are now on the same rank.
 
     ```{dot}
     digraph G {
@@ -143,7 +142,7 @@ The forth step {rank = same} is optional and dictates that the three categories 
 :::
 
 ::: solution
-### Here is an example of this Graphviz in your document: 
+### Here is an example of this Graphviz Chart in your document: 
 
 ![](fig/code_02.png)
 
@@ -153,22 +152,21 @@ The forth step {rank = same} is optional and dictates that the three categories 
 ::: challenge
 ### Exercise 2: Graphviz
 
-Try to create your own flow chart. Try out different numbers of categories and change the connections and directions to experiment on how the resulting flow chart will change.
+Try to create your own flow chart. Try out different numbers of categories and change the connections and directions to experiment with how the resulting flow chart will change.
 :::
 
 ## Adding information
 
-When implementing visualisations, it is always important to add relevant information in form of titles, descriptions etc to the chart.
-This can be done by inserting the relevant information into the relevant code chunk in form of comments.
-
+When implementing visualisations, it is always important to add relevant information in the form of titles, descriptions, etc. to the chart.
+This can be done by inserting the relevant information into the relevant code chunk in the form of comments.
 ::: callout
 Here one can use the same commands that are also used for the sizing and descriptions of pictures and illustrations. An overview of the possibilities can be found [here](https://quarto.org/docs/authoring/figures.html)
 :::
 
-For our Example we, will now try to add some additional informations to our Mermaid pie chart:
-First we will give it an actual internal name. This can be done by adding the Key-Value pair "label: 'selected name'" as a comment to your code. In order to keep it simple we just choose "Illustration 1"
-Then we add a caption for our illustration.  Here we also use a Key-Value pair, this time with the Key "fig-cap". This will create a caption for our illiustration. 
-lastly we want to limit how wide our newly created graph will be when displayed. This can be done by adding a third Key-Value pair, this time with the "fig-width" key.
+For our example, we will now try to add some additional information to our Mermaid pie chart:
+First we will give it an actual internal name. This can be done by adding the Key-Value pair "label: 'selected name'" as a comment to your code. In order to keep it simple, we just choose "Illustration 1".
+Then we add a caption for our illustration. Here we also use a Key-Value pair, this time with the key "fig-cap". This will create a caption for our illustration.
+Lastly, we want to limit how wide our newly created graph will be when displayed. This can be done by adding a third Key-Value pair, this time with the "fig-width" key.
 
     ```{mermaid}
     
@@ -187,9 +185,9 @@ lastly we want to limit how wide our newly created graph will be when displayed.
     ```
 
 ## A quick forey into Python:
-Various python extensions can be used to plot and illustrate data in Quarto. Doing so will poste no difference to doing this in a pure Python environment.
-The steps needed to be performed to create and implement a wide variety of illustrations and graphs in Python are explained in the Carpenty Lesson [Python101](https://hermes-dkz.github.io/python_101_humanities/). 
-Step 4 of the episode "Analyzing Tabular Data" concerns itself with the visualisation of tabular data. 
+Various Python extensions can be used to plot and illustrate data in Quarto. Doing so will pose no difference to doing this in a pure Python environment.
+The steps needed to be performed to create and implement a wide variety of illustrations and graphs in Python are explained in the Carpentry Lesson [Python101](https://hermes-dkz.github.io/python_101_humanities/). 
+Step 4 of the episode "Analyzing Tabular Data" concerns itself with the visualisation of tabular data.
 
 ::: caution
 The intricacies of creating useful charts and visualisations using various Python libraries would be too much to discuss in this lesson. We would encourage you to visit our lesson Python101 in order to learn more about this.
@@ -201,9 +199,11 @@ You simply need to insert the following part into your Quarto document in order 
     
     ```
 
-If we want to insert a Python based carchart into our paper we can actually use some of the code used in the Python101 course for our paper. In the couse, a comprehensive database of artworks exibited in the MOMA is used and visualised in various form. 
-We can use one of the code chunks used, and modify it for our puposes.
-As Quarto is able to read, render and calculate Python code, you can be creative and use all forms of coding used when writing Python code as a stand alone program.
+If we want to insert a Python‑based chart into our paper, we can actually use some of the code used in the Python101 course for our paper.
+In the course, a comprehensive database of artworks exhibited in the MOMA is used and visualised in various forms.
+We can use one of the code chunks used, and modify it for our purposes.
+As Quarto is able to read, render, and calculate Python code, you can be creative and use all forms of coding used when writing Python code as a stand‑alone program.
+
 The result could look something like this:
 
     ```{Python}
@@ -229,9 +229,9 @@ The result could look something like this:
     fig.show()
     ```
 
-Using the Plotly library, the python code is now loaded into our quarto document and will be shown in our rendred document as a barchart.
+Using the Plotly library, the Python code is now loaded into our Quarto document and will be shown in our rendered document as a bar chart.
 
-Using this code chuck in VSCode could look like the following example:
+Using this code chunk in VSCode could look like the following example:
 
 ![](fig/code_03.png)
 
@@ -239,7 +239,7 @@ Using this code chuck in VSCode could look like the following example:
 ::: caution
 
 ### Caution!
-Not all forms of visualisation work in every format. In this example Plotly only works in html formats, not in pdf or similar formats.
+Not all forms of visualisation work in every format. In this example, Plotly only works in HTML formats, not in PDF or similar formats.
 
 :::
 
@@ -248,7 +248,7 @@ Not all forms of visualisation work in every format. In this example Plotly only
 
 ### Caution:
 
-Every Coding language has a different way of creating comments. The ones used in this Lesson are the following:
+Every coding language has a different way of creating comments. The ones used in this lesson are the following:
 
 Python: ##|
 Mermaid: %%|
