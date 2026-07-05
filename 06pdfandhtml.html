@@ -338,7 +338,7 @@
       </div>
     </nav><main id="main-content" class="main-content"><div class="container lesson-content">
         <h1>Quarto for PDF and HTML</h1>
-        <p>Last updated on 2026-06-29 |
+        <p>Last updated on 2026-07-05 |
 
         <a href="https://github.com/SteUhl/test2/edit/main/episodes/06pdfandhtml.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 
@@ -358,7 +358,7 @@
 <div class="inner">
 <h3 class="card-title">Questions</h3>
 <ul><li>What unique options exist for PDFs in Quarto?</li>
-<li>What unique iptions exist for HTML in Quarto?</li>
+<li>What unique options exist for HTML in Quarto?</li>
 </ul></div>
 </div>
 </div>
@@ -375,34 +375,40 @@ Quarto document.</li>
 </div>
 </div>
 <p>Every different format of Quarto has its own unique commands and
-output specific code. These are most often part of the YAML header. As
-there is a large array of possible Key-Values, making it possible to
-customize many different and minute aspects of Quarto, we will only show
-you some of the more simple and easy to understand Key-Value pairs. But
-as the theory behind all YAML pairs and their resulting changes and
-modifications are the same, you can freely experiment with all offered
-possibilities to find the options that fit your preferred visual and
-editorial style.</p>
+output‑specific code. These are most often part of the YAML header.</p>
+<p>As there is a large array of possible key‑value pairs, making it
+possible to customize many different and minute aspects of Quarto, we
+will only show you some of the more simple and easy‑to‑understand
+key‑value pairs.</p>
+<p>But as the theory behind all YAML pairs and their resulting changes
+and modifications is the same, you can freely experiment with all
+offered possibilities to find the options that fit your preferred visual
+and editorial style.</p>
 <section><h2 class="section-heading" id="pdf">PDF<a class="anchor" aria-label="anchor" href="#pdf"></a></h2>
 <hr class="half-width"><p>In the case of a PDF, these mainly dictate things such as the font
-used, the dimensions of the PDF and the class of PDF used.</p>
-<p>A comprehensive overview over all possible YAML commands can be found
+used, the dimensions of the PDF, and the class of PDF used.</p>
+<p>A comprehensive overview of all possible YAML commands can be found.
 <a href="https://quarto.org/docs/reference/formats/pdf.html" class="external-link">here</a></p>
 <div class="section level3">
 <h3 id="documentclass">Documentclass<a class="anchor" aria-label="anchor" href="#documentclass"></a></h3>
-<p>The documentclass given in YAML functions as a shorthand used to
-immediately change a variety of characteristics. The main
-documentclasses used in Quarto PDFs are: article, book and report.</p>
+<p>The document class given in YAML functions as a shorthand used to
+immediately change a variety of characteristics.</p>
+<p>The main document classes used in Quarto PDFs are: article, book, and
+report.</p>
 <p>These classes offer the following benefits:</p>
-<p>Article: - used mainly for short texts, not divided into chapters -
-formatted in single column texts with author and title of the article at
-the top</p>
-<p>Report: - used mainly for longer texts, which are divided into
-different chapters - automatically generates a frontpage with author and
-title</p>
-<p>Book: - used for publishing and complete books - supports division
-into frontmatter, main matter and back matter - integrates publishing
-and print friendly dimensions</p>
+<p><strong>Article:</strong><br>
+- used mainly for short texts that are not divided into chapters<br>
+- formatted in single‑column text with the author and title of the
+article at the top</p>
+<p><strong>Report:</strong><br>
+- used mainly for longer texts that are divided into different
+chapters<br>
+- automatically generates a front page with the author and title</p>
+<p><strong>Book:</strong><br>
+- used for publishing complete books<br>
+- supports division into front matter, main matter, and back
+matter<br>
+- integrates publishing‑ and print‑friendly dimensions</p>
 </div>
 <div class="section level3">
 <h3 id="fonts-and-colours">Fonts and colours<a class="anchor" aria-label="anchor" href="#fonts-and-colours"></a></h3>
@@ -417,9 +423,9 @@ by a typeset into the header.</p>
 <span id="cb1-2"><a href="#cb1-2" tabindex="-1" aria-label="code-block-1-2"></a><span class="fu">sansfont</span><span class="kw">:</span><span class="at"> </span><span class="st">"Open Sans"</span><span class="at">         </span><span class="er">Sets</span><span class="at"> </span><span class="er">Open</span><span class="at"> </span><span class="er">Sans</span><span class="at"> </span><span class="er">as</span><span class="at"> </span><span class="er">a</span><span class="at"> </span><span class="er">font</span><span class="at"> </span><span class="er">for</span><span class="at"> </span><span class="er">headings</span></span>
 <span id="cb1-3"><a href="#cb1-3" tabindex="-1" aria-label="code-block-1-3"></a><span class="at">    </span><span class="kw">-</span><span class="at"> Color=39729E            Sets the Color of headings using a HexCode</span></span></code></pre>
 </div>
-<p>The color of different parts of the PDF can be changes using a
+<p>The color of different parts of the PDF can be changed using a
 similar code.</p>
-<p>for example:</p>
+<p>For example:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -429,8 +435,8 @@ similar code.</p>
 </div>
 <div class="section level3">
 <h3 id="layout">Layout<a class="anchor" aria-label="anchor" href="#layout"></a></h3>
-<p>Lastly one can use a variety of command in order to change the
-general layout of the document, such as margins, paper size and
+<p>Lastly, one can use a variety of commands in order to change the
+general layout of the document, such as margins, paper size, and
 geometry.</p>
 <div class="codewrapper sourceCode" id="cb3">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -446,18 +452,18 @@ geometry.</p>
 </div>
 </div>
 </section><section><h2 class="section-heading" id="html">HTML<a class="anchor" aria-label="anchor" href="#html"></a></h2>
-<hr class="half-width"><p>Many of the options available for PDFS are also or similarly
-available for HTML based Quarto documents. They allow you to customise
-familiar options such as the Table of Contents, fonts or visibility of
-links. A comprehensive overview over all available options can be found
+<hr class="half-width"><p>Many of the options available for PDFs are also or similarly
+available for HTML‑based Quarto documents. They allow you to customise
+familiar options such as the Table of Contents, fonts, or visibility of
+links. A comprehensive overview of all available options can be found.
 <a href="https://quarto.org/docs/reference/formats/html.html" class="external-link">here</a></p>
-<p>A more unique possibility for HTML formats is the so called themes,
+<p>A more unique possibility for HTML formats is the so‑called themes,
 which allow you to give your website a more concise and complete visual
 overhaul. They change a variety of aesthetic characteristics such as
-highlight colours, fonts and layout. Quarto uses a 25 themes from the
-Bootswitch project. A full overview can be found <a href="https://bootswatch.com/" class="external-link">here</a> Multiple themes can be used in
-order to for example implement a Dark and Light mode to your website. To
-implement such a theme you simply need to add it to your YAML header
+highlight colours, fonts, and layout. Quarto uses 25 themes from the
+Bootswatch project. A full overview can be found <a href="https://bootswatch.com/" class="external-link">here</a> Multiple themes can be used in
+order to, for example, implement a Dark and Light mode to your website.
+To implement such a theme, you simply need to add it to your YAML header
 like this:</p>
 <div class="codewrapper sourceCode" id="cb4">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -489,7 +495,7 @@ the new YAML headers and options in your document. Be creative!</p>
 <span class="callout-header">Key Points</span>
 <div class="callout-inner">
 <div class="callout-content">
-<ul><li>When rendering as a PDF, the YAMl header can be used to select
+<ul><li>When rendering as a PDF, the YAML header can be used to select
 templates, layouts and fonts</li>
 <li>When rendering as HTML, the YAML header can be used to select
 different themes</li>
@@ -560,7 +566,7 @@ any links that you are not going to use.
   "url": "https://SteUhl.github.io/test2/06pdfandhtml.html",
   "identifier": "https://SteUhl.github.io/test2/06pdfandhtml.html",
   "dateCreated": "2024-04-05",
-  "dateModified": "2026-06-29",
+  "dateModified": "2026-07-05",
   "datePublished": "2026-07-05"
 }
 
