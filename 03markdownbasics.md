@@ -94,8 +94,11 @@ One of them is to find a usable Public Domain image from a website such as Wikim
 Now we need to insert our found image into our paper. To do so we can use either the URL we found via Wikimedia, or an image already found on our device.
 
 In Markdown images are marked by an exclamation point, square brackets, round brackets and winged brackets. 
+
 The square brackets can be left empty, but otherwise contain an alternate text for the image. Here we can also add the assotiation and copyright information we found on Wikimedia!
+
 The round brackets contain the link or datapath of the image.
+
 The winged brackets can be used to change the rendered image’s size and dimensions.
 
 This could look something like this:
