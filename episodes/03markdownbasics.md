@@ -35,6 +35,8 @@ Some of the most useful parts of Markdown syntax are shown here:
 
 Now that we know some of the basic syntax of Markdown, we can start to write our paper!
 
+### Implementing structure
+
 Let’s start with some headers to give our paper some structure. For this, we start by creating a basic structure using the different tiers of headers offered by Markdown:
 
 ```
@@ -58,6 +60,8 @@ This structure, created by the different quantity of # in each line, creates a t
 This newly created structure will later be used by Quarto to create the section headers, as well as a table of contents.
 You can put up to six # in a line.
 
+### Implementing text
+
 Now that we have our section headers, we can add the most important part of a paper: the text.
 For this we can simply add whatever text we want to insert between our headers:
 
@@ -73,21 +77,36 @@ Over the decades, MoMA has expanded both physically and conceptually. Renovation
 
 ```
 
+### Implementing Images
+
 Now let’s add a few more visual elements to our texts. We could use, for example, an image and a table to do so.  
 
 ---
 
-In order to add an image we can use either images from the internet by adding a link, or add a path to the location of the image on the device.
-Images are marked by an exclamation point, square brackets, round brackets and winged brackets. The square brackets can be left empty, but otherwise contain an alternate text for the image. The round brackets contain the link or datapath of the image, and the winged brackets can be used to change the rendered image’s size and dimensions.
+In regards to image implementation, there are several ways to find and add images to our paper.
+One of them is to find a usable Public Domain image from a website such as Wikimedia. This can be done by following these simple steps:
+
+1. Find an appropriate image in Wikimedia and open its site. For our porpuses we will use the [MoMA logo](https://pad.zdv.net/_link?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AMuseum_of_Modern_Art_logo.svg)
+2. On the page you should find a button called **"Use this file"**. This could look something like this:
+  ![](fig/markdown_wikimedia.png)
+3. Now you should have the File-URL and the attribution of the image as plaintext. in other case the URL is *"https://upload.wikimedia.org/wikipedia/commons/2/21/Museum_of_Modern_Art_logo.svg"* and the attribution is *"Museum of Modern Art, Matthew Carter, Public domain, via Wikimedia Commons"*
+
+Now we need to insert our found image into our paper. To do so we can use either the URL we found via Wikimedia, or an image already found on our device.
+
+In Markdown images are marked by an exclamation point, square brackets, round brackets and winged brackets. 
+The square brackets can be left empty, but otherwise contain an alternate text for the image. Here we can also add the assotiation and copyright information we found on Wikimedia!
+The round brackets contain the link or datapath of the image.
+The winged brackets can be used to change the rendered image’s size and dimensions.
+
 This could look something like this:
     
 
 ```
 Using a link:
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/MoMa_NY_USA_1.jpg/960px-MoMa_NY_USA_1.jpg){width=x height=300}
+![Museum of Modern Art, Matthew Carter, Public domain, via Wikimedia Commons](https://upload.wikimedia.org/wikipedia/commons/2/21/Museum_of_Modern_Art_logo.svg){width=x height=300}
 
 Using a local image. The image must be in the same folder as the Quarto document!
-![](MOMAyard.JPG){width=x height=300}
+![](MOMAlogo.JPG){width=x height=300}
 
 ```
 ::: callout
@@ -98,6 +117,7 @@ For example:
 ```
 :::
 
+### Implementing tables
 
 Now we can add a table to our document. For this we "draw" a table in Markdown like this:
 ```
