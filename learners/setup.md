@@ -32,26 +32,26 @@ Now that we have installed Quarto on our computer we need to install the relevan
 
 First we open the code editor and open a new terminal. Do do so we and select ```Terminal → New Terminal``` (1). 
 
-![](fig/setup_1.png)
+![](episodes/fig/setup_1.png)
 
 In the terminal, we enter the command ```quarto check install``` (2) and confirm it by pressing Enter. 
 If Quarto is installed successfully, a message will appear showing the installed Quarto version and the installation path (3).
 
-![](fig/setup_2.png)
+![](episodes/fig/setup_2.png)
 
 #### Installing the Quarto extension
 
 First we click on ```Extensions``` (1) on the left and search for “Quarto” (2) in the search bar. 
 Once we arrive in the Extension selection, we select the official Quarto extension (3) and install it (4).
 
-![](fig/setup_3.png)
+![](episodes/fig/setup_3.png)
 
 #### Testing the Installation
 
 In order to test our newly installed Quarto extension, we click on ```Explorer``` (5) on the left and create a new file (6). 
 If we see the options ```Quarto Document``` and ``Quarto Project`` appear in the top bar, the extension has been successfully installed (7).
 
-![](fig/setup_4.png)
+![](episodes/fig/setup_4.png)
 
 #### Installing a PDF Extension
 
@@ -59,7 +59,7 @@ In order to create PDF documents with Quarto we need to install the TinyTex dist
 We do so by entering ```quarto install tinytex``` (8) into the terminal of our coding environment. 
 Once we have confirmed by pressing ```Enter```, the extension should install automatically. This could take some minutes.
 
-![](fig/setup_5.png)
+![](episodes/fig/setup_5.png)
 
 ### Installing Python and Jupyter
 
