@@ -47,7 +47,7 @@ After opening the new file, you should see the following:
 
 The “empty” document contains only a minimal YAML header with generic information about the document’s title and format.
 
-By using the keybord shortcut *Ctrl + S*, we can now save our new Quarto document in our previously created "Art_distribution_paper" folder. We will call it *"Moma_paper"*
+By using the keyboard shortcut *Ctrl + S*, we can now save our new Quarto document in our previously created "Art_distribution_paper" folder. We will call it *"Moma_paper"*
 
 ## Visual and Source Mode
 
