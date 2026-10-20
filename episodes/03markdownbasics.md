@@ -25,9 +25,10 @@ In order to use the source mode of Quarto, one needs to be able to write a docum
 The relative simplicity and straightforwardness of Markdown makes it one of the ideal programming languages for beginners. It is used by a variety of programs and exists in the background of most modern text-based programs.
 For example, this page is based on Markdown as well!
 Markdown is designed as a simple and easy to understand programming language. As such, there are only a few key features the user needs to know to create basic syntax in Markdown.
-These features contain some of the most common elements of written texts, such as tables, links and footnotes. But also features used to visually improve your text with features such as bold or italicised writing, horizontal lines for text separation or differently sized headers.
+These features contain some of the most common elements of written texts, such as tables, links and footnotes. But also features used to visually improve your text with features such as bold or italicized writing, horizontal lines for text separation or differently sized headers.
 The implementation of pictures is also possible to implement pictures in Markdown.
 Some of the most useful parts of Markdown syntax are shown here:
+
 
 ![A table with an overview of basic Markdown syntax](fig/markdown_01.png)
 
@@ -52,11 +53,11 @@ Let’s start with some headers to give our paper some structure. For this, we s
 ### Distinction by Origin
 ## Analysis of the Dataset
 ### Summary of Data
-### Visualisations
+### Visualizations
 # Final Thoughts
 ```
 
-This structure, created by the different quantity of # in each line, creates a tiered layering of headers, subheaders and so on. The more # we put at the start of a line, the less "important" a header is.
+This structure, created by the different quantity of # in each line, creates a tiered layering of headers, sub-headers and so on. The more # we put at the start of a line, the less "important" a header is.
 This newly created structure will later be used by Quarto to create the section headers, as well as a table of contents.
 You can put up to six # in a line.
 
@@ -86,7 +87,7 @@ Now let’s add a few more visual elements to our texts. We could use, for examp
 In regards to image implementation, there are several ways to find and add images to our paper.
 One of them is to find a usable Public Domain image from a website such as Wikimedia. This can be done by following these simple steps:
 
-1. Find an appropriate image in Wikimedia and open its site. For our porpuses we will use the [MoMA logo](https://pad.zdv.net/_link?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AMuseum_of_Modern_Art_logo.svg)
+1. Find an appropriate image in Wikimedia and open its site. For our purposes we will use the [MoMA logo](https://pad.zdv.net/_link?url=https%3A%2F%2Fcommons.wikimedia.org%2Fwiki%2FFile%3AMuseum_of_Modern_Art_logo.svg)
 2. On the page you should find a button called **"Use this file"**. This could look something like this:
   ![](fig/markdown_wikimedia.png)
 3. Now you should have the File-URL and the attribution of the image as plaintext. in other case the URL is *"https://upload.wikimedia.org/wikipedia/commons/2/21/Museum_of_Modern_Art_logo.svg"* and the attribution is *"Museum of Modern Art, Matthew Carter, Public domain, via Wikimedia Commons"*
@@ -95,9 +96,9 @@ Now we need to insert our found image into our paper. To do so we can use either
 
 In Markdown images are marked by an exclamation point, square brackets, round brackets and winged brackets. 
 
-The square brackets can be left empty, but otherwise contain an alternate text for the image. Here we can also add the assotiation and copyright information we found on Wikimedia!
+The square brackets can be left empty, but otherwise contain an alternate text for the image. Here we can also add the association and copyright information we found on Wikimedia!
 
-The round brackets contain the link or datapath of the image.
+The round brackets contain the link or data-path of the image.
 
 The winged brackets can be used to change the rendered image’s size and dimensions.
 
@@ -126,7 +127,7 @@ Now we can add a table to our document. For this we "draw" a table in Markdown l
 ```
 ## Subsections of the MOMA
 
-| Name | Responcebility |
+| Name | Responsibility |
 | -------- | ------- |
 | Architecture and Design | Collect, manage, and exhibit architectural drawings and models, design objects, and graphic design works. |
 | Drawings and Prints | Collect, manage, and exhibit modern and contemporary drawings and prints. |
@@ -137,7 +138,7 @@ Now we can add a table to our document. For this we "draw" a table in Markdown l
 | Publications | Produce and publish the Museum’s exhibition catalogues and other books, including digital publications. |
 | Video (Digital Media) | Work with MoMA video producers to develop and produce content for MoMA’s YouTube Live series |
 ```
-The different sections of the table are devided by |.
+The different sections of the table are divided by |.
 
 When we have now added our table and image to our text, it could look something like this when rendered:
 ![](fig/markdown_02.png)
@@ -159,7 +160,7 @@ Websites like [MarkdownGuide](https://www.markdownguide.org/) offer a wide varie
 
 ::::::::::::::::::::::::::::::::::::: keypoints
 
-+ Quarto uses MArkdown as its core language
++ Quarto uses Markdown as its core language
 + You can use # to create headings in Markdown
 + You can use `![text](Link/directory)` to implement images
 + You can "draw" tables in Markdown
